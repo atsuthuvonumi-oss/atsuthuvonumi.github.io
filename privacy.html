@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Naga Gospel Songs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --paper: #FAF6EC;
+    --paper-deep: #F2ECDC;
+    --ink: #2B221B;
+    --maroon: #6B1F2A;
+    --gold: #A9802F;
+    --rule: #D9CBB0;
+    --slate: #5C5347;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *{ animation: none !important; transition: none !important; }
+  }
+
+  body{
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{ color: var(--maroon); text-decoration-color: var(--gold); }
+  a:hover{ color: var(--gold); }
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid var(--maroon);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .wrap{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ---------- Header ---------- */
+
+  header.hero{
+    background: var(--paper-deep);
+    border-bottom: 1px solid var(--rule);
+    padding: 64px 0 48px;
+    animation: fadeUp 0.6s ease both;
+  }
+  @keyframes fadeUp{
+    from{ opacity: 0; transform: translateY(8px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+
+  .eyebrow{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--maroon);
+    margin-bottom: 18px;
+  }
+  .eyebrow .note{ color: var(--gold); font-size: 15px; }
+  .eyebrow .rule{
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  h1{
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(40px, 6vw, 58px);
+    line-height: 1.04;
+    margin: 0 0 14px;
+    color: var(--ink);
+  }
+
+  .updated{
+    font-family: 'Inter', sans-serif;
+    font-size: 13.5px;
+    color: var(--slate);
+    letter-spacing: 0.02em;
+  }
+  .updated strong{ color: var(--ink); font-weight: 600; }
+
+  .lede{
+    margin-top: 22px;
+    max-width: 56ch;
+    color: var(--slate);
+    font-size: 16.5px;
+  }
+
+  /* ---------- Table of contents ---------- */
+
+  nav.toc{
+    padding: 36px 0 8px;
+  }
+  nav.toc h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin: 0 0 16px;
+  }
+  .toc-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 28px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .toc-grid li{ border-bottom: 1px solid var(--rule); }
+  .toc-grid a{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    padding: 9px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14.5px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .toc-grid a:hover{ color: var(--maroon); }
+  .toc-grid .num{
+    font-family: 'Fraunces', serif;
+    font-variant-numeric: oldstyle-nums;
+    color: var(--gold);
+    font-size: 15px;
+    min-width: 20px;
+  }
+
+  @media (max-width: 560px){
+    .toc-grid{ grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Sections ---------- */
+
+  main{ padding: 20px 0 10px; }
+
+  section.entry{
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 4px 22px;
+    padding: 38px 0;
+    border-bottom: 1px solid var(--rule);
+    scroll-margin-top: 24px;
+  }
+  section.entry:last-of-type{ border-bottom: none; }
+
+  .hymn-no{
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-variant-numeric: oldstyle-nums;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 1;
+    color: var(--maroon);
+    opacity: 0.82;
+  }
+  .hymn-no::before{ content: ''; }
+
+  section.entry h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 23px;
+    margin: 2px 0 12px;
+    color: var(--ink);
+    grid-column: 2;
+  }
+
+  section.entry .body{ grid-column: 2; color: var(--ink); }
+  section.entry .body p{ margin: 0 0 14px; }
+  section.entry .body ul{ margin: 0 0 14px; padding-left: 22px; }
+  section.entry .body li{ margin-bottom: 8px; }
+  section.entry .body p:last-child,
+  section.entry .body ul:last-child{ margin-bottom: 0; }
+
+  @media (max-width: 560px){
+    section.entry{ grid-template-columns: 1fr; gap: 6px; }
+    .hymn-no{ font-size: 28px; }
+    section.entry h2, section.entry .body{ grid-column: 1; }
+  }
+
+  /* ---------- Footer ---------- */
+
+  footer{
+    padding: 48px 0 60px;
+    text-align: center;
+  }
+  .staff{
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .staff .line{ flex: 1; height: 1px; background: var(--rule); }
+  .staff .glyph{ color: var(--gold); font-size: 17px; }
+
+  footer p{
+    margin: 0 0 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--slate);
+  }
+  footer a{ font-weight: 500; }
+
+  .back-top{
+    display: inline-block;
+    margin-top: 22px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--maroon);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 2px;
+  }
+
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">
+      <span class="note">♪</span>
+      <span>Naga Gospel Songs</span>
+      <span class="rule"></span>
+      <span>Privacy Policy</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated <strong>June 18, 2026</strong></p>
+    <p class="lede">How Naga Gospel Songs handles information when you use the app — written plainly, the way we'd want it explained to us.</p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Table of contents">
+  <div class="wrap">
+    <h2>Contents</h2>
+    <ul class="toc-grid">
+      <li><a href="#s1"><span class="num">01</span>Introduction</a></li>
+      <li><a href="#s2"><span class="num">02</span>Information Collection and Use</a></li>
+      <li><a href="#s3"><span class="num">03</span>Third-Party Data Collection (AdMob)</a></li>
+      <li><a href="#s4"><span class="num">04</span>Data Sharing</a></li>
+      <li><a href="#s5"><span class="num">05</span>Offline Functionality</a></li>
+      <li><a href="#s6"><span class="num">06</span>Data Security</a></li>
+      <li><a href="#s7"><span class="num">07</span>Children's Privacy</a></li>
+      <li><a href="#s8"><span class="num">08</span>Changes to This Policy</a></li>
+      <li><a href="#s9"><span class="num">09</span>Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section class="entry" id="s1">
+    <div class="hymn-no">01</div>
+    <h2>Introduction</h2>
+    <div class="body">
+      <p>This Privacy Policy explains how Naga Gospel Songs ("we," "our," or "the App") handles information when you access and use the application. The App is designed primarily to provide offline access to hymn lyrics and titles. By using the App, you agree to the terms of this Privacy Policy.</p>
+    </div>
+  </section>
+
+  <section class="entry" id="s2">
+    <div class="hymn-no">02</div>
+    <h2>Information Collection and Use</h2>
+    <div class="body">
+      <p>The App itself does not directly collect, store, or transmit any personally identifiable information (PII) such as your name, email address, or phone number.</p>
+      <p>However, the App incorporates a third-party developer tool that may collect information automatically. Specifically, we use Google AdMob to display advertisements. To learn more about how Google handles your data, please review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy &amp; Terms</a>.</p>
+    </div>
+  </section>
+
+  <section class="entry" id="s3">
+    <div class="hymn-no">03</div>
+    <h2>Third-Party Data Collection (Google AdMob)</h2>
+    <div class="body">
+      <p>Google AdMob may automatically collect and process certain data to serve relevant ads, limit ad repetition, and detect fraud. This data includes:</p>
+      <ul>
+        <li><strong>Device identifiers:</strong> advertising IDs (such as Android Advertising ID), device models, and operating system versions.</li>
+        <li><strong>Network &amp; location data:</strong> IP addresses, mobile carrier details, and approximate location data.</li>
+        <li><strong>Interaction data:</strong> information about how you interact with the advertisements shown within the App.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="entry" id="s4">
+    <div class="hymn-no">04</div>
+    <h2>Data Sharing</h2>
+    <div class="body">
+      <p>We do not sell, trade, or rent user data to third parties. Any user data processing is handled strictly by our third-party advertising partner (Google AdMob) as disclosed above.</p>
+      <p>Any sharing of hymn text or titles occurs solely through your own user-initiated actions — for example, using your phone's built-in system share menu to copy text or send it via external messaging or social media apps. The App does not track or store the content you choose to share.</p>
+    </div>
+  </section>
+
+  <section class="entry" id="s5">
+    <div class="hymn-no">05</div>
+    <h2>Offline Functionality</h2>
+    <div class="body">
+      <p>The core features of the App function entirely offline. An active internet connection is only used to load and display advertisements via Google AdMob.</p>
+    </div>
+  </section>
+
+  <section class="entry" id="s6">
+    <div class="hymn-no">06</div>
+    <h2>Data Security</h2>
+    <div class="body">
+      <p>We care about protecting your privacy. While the App does not store personal data on external servers, our third-party provider, Google AdMob, implements industry-standard encryption and security protocols to safeguard the device information it processes.</p>
+    </div>
+  </section>
+
+  <section class="entry" id="s7">
+    <div class="hymn-no">07</div>
+    <h2>Children's Privacy</h2>
+    <div class="body">
+      <p>The App is suitable for all audiences but is not explicitly targeted at children under the age of 13. Google AdMob complies with applicable regulatory standards for child-directed ad delivery where configured in the developer settings.</p>
+    </div>
+  </section>
+
+  <section class="entry" id="s8">
+    <div class="hymn-no">08</div>
+    <h2>Changes to This Policy</h2>
+    <div class="body">
+      <p>We may update this Privacy Policy from time to time. Any updates will be reflected on this page with a revised "Last Updated" date at the top. We recommend checking this page periodically for updates.</p>
+    </div>
+  </section>
+
+  <section class="entry" id="s9">
+    <div class="hymn-no">09</div>
+    <h2>Contact Us</h2>
+    <div class="body">
+      <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at <a href="mailto:swurolucius@gmail.com">swurolucius@gmail.com</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="staff">
+      <span class="line"></span>
+      <span class="glyph">♪</span>
+      <span class="line"></span>
+    </div>
+    <p>Naga Gospel Songs</p>
+    <p><a href="mailto:swurolucius@gmail.com">swurolucius@gmail.com</a></p>
+    <a class="back-top" href="#top">Back to top</a>
+  </div>
+</footer>
+
+</body>
+</html>
